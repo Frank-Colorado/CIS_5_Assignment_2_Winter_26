@@ -110,24 +110,30 @@ public:
 	string calculateGrade(int g) const {
 
 		if (g >= 90) {
-			return "You got an A on the assignment! Great Job!";
+			return "You also got an A on the assignment! Great Job!";
 		}
 		else if (g >= 80) {
-			return "You got a B on the assignment! Keep it up!";
+			return "You also got a B on the assignment! Keep it up!";
 		}
 		else if (g >= 70) {
-			return "You got a C on the assignment! You can do better!";
+			return "You also got a C on the assignment! You can do better!";
 		}
 		else if (g >= 60) {
-			return "You got a D on the assignment! Study a little more!";
+			return "You also got a D on the assignment! Study a little more!";
 		}
 		else {
-			return "You got an F on the assignment! You need to work harder!";
+			return "You also got an F on the assignment! You need to work harder!";
 		}
 	}
 
 	// Display user information
+	void displayInfo(int g) const {
 
+		cout << "Hey " << getName() << "!" << endl;
+		cout << "You are " << getAge() << " years old." << endl;
+		cout << "You have a BMI of " << calculateBMI() << " " << getBMICategory() << endl;
+		cout << calculateGrade(g) << endl;
+	}
 
 
 

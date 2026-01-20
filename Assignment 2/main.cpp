@@ -110,19 +110,19 @@ public:
 	string calculateGrade(int g) const {
 
 		if (g >= 90) {
-			return "You also got an A on the assignment! Great Job!";
+			return "You also got an A on the test! Great Job!";
 		}
 		else if (g >= 80) {
-			return "You also got a B on the assignment! Keep it up!";
+			return "You also got a B on the test! Keep it up!";
 		}
 		else if (g >= 70) {
-			return "You also got a C on the assignment! You can do better!";
+			return "You also got a C on the test! You can do better!";
 		}
 		else if (g >= 60) {
-			return "You also got a D on the assignment! Study a little more!";
+			return "You also got a D on the test! Study a little more!";
 		}
 		else {
-			return "You also got an F on the assignment! You need to work harder!";
+			return "You also got an F on the test! You need to work harder!";
 		}
 	}
 
@@ -140,6 +140,28 @@ public:
 };
 
 int main() {
+
+	string name;
+	int age;
+	double height;
+	double weight;
+	int grade;
+
+	cout << "What is your name? ";
+	cin >> name;
+	cout << "How old are you? ";
+	cin >> age;
+	cout << "What is your height in meters? ";
+	cin >> height;
+	cout << "What is your weight in kilograms? ";
+	cin >> weight;
+	cout << "What grade did you get on your last test? ";
+	cin >> grade;
+
+	User user(name, age, height, weight);
+
+	user.displayInfo(grade);
+
 
 	return 0;
 }

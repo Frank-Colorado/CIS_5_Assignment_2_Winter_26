@@ -79,6 +79,14 @@ public:
 		return weight;
 	}
 
+	// Calculate BMI
+	double calculateBMI() const {
+		if (height <= 0) {
+			return 0.0;
+		}
+		return weight / (height * height);
+	}
+
 
 
 };

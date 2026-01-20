@@ -3,7 +3,7 @@
 For this assignment I followed the instructions defined in the rest of this README file. I wanted to try using private attributes and getter/setter methods for this assignment. I don't know if this was the most optimal way to do this assignment but I wanted experience using getters/setters regardless. I created multiple methods to get user input and then set their inputs as private attributes in the User Class. I also created a constructor so that this class could be reused for diffrent users. I also created methods to calculate the user's BMI, BMI category, and their letter grade. 
 
 Here is the link for the demonstration video for Assignment 02
-https://vimeo.com/1156309058?share=copy&fl=sv&fe=ci
+https://vimeo.com/1156312990?share=copy&fl=sv&fe=ci
 
 
 

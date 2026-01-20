@@ -87,6 +87,48 @@ public:
 		return weight / (height * height);
 	}
 
+	// Get the user's BMI category
+	string getBMICategory() const {
+
+		double bmi = calculateBMI();
+
+		if (bmi < 18.5) {
+			return "(Underweight)";
+		}
+		else if (bmi < 24.9) {
+			return "(Normal weight)";
+		}
+		else if (bmi < 29.9) {
+			return "(Overweight)";
+		}
+		else {
+			return "(Obese)";
+		}
+	}
+
+	// Calculate the user's grade
+	string calculateGrade(int g) const {
+
+		if (g >= 90) {
+			return "You got an A on the assignment! Great Job!";
+		}
+		else if (g >= 80) {
+			return "You got a B on the assignment! Keep it up!";
+		}
+		else if (g >= 70) {
+			return "You got a C on the assignment! You can do better!";
+		}
+		else if (g >= 60) {
+			return "You got a D on the assignment! Study a little more!";
+		}
+		else {
+			return "You got an F on the assignment! You need to work harder!";
+		}
+	}
+
+	// Display user information
+
+
 
 
 };

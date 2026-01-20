@@ -20,7 +20,6 @@ public:
 	}
 
 	// Setters 
-
 	void setName(string n) {
 		name = n;
 	}
@@ -58,6 +57,23 @@ public:
 		else {
 			weight = w;
 		}
+	}
+
+	// Getters 
+	string getName() const {
+		return name;
+	}
+
+	int getAge() const {
+		return age;
+	}
+
+	double getHeight() const {
+		return height;
+	}
+
+	double getWeight() const {
+		return weight;
 	}
 
 

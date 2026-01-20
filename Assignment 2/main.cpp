@@ -16,7 +16,10 @@ private:
 public:
 	// Constructor
 	User(string n, int a, double h, double w) {
-
+		setName(n);
+		setAge(a);
+		setHeight(h);
+		setWeight(w);
 	}
 
 	// Setters 
@@ -75,7 +78,6 @@ public:
 	double getWeight() const {
 		return weight;
 	}
-
 
 
 
